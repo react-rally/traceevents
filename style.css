@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #4A4A4A;
+  font-family: lato, sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+footer {
+  border-top: 1px solid #DCDCDC;
+  font-size: 14px;
+  text-align: center;
+  margin: 50px 0;
+  padding-top: 50px;
+}
+
+a {
+  color: #00ADEF;
+  text-decoration: none;
+}
+
+h1 {
+  color: #00ADEF;
+}
+h1 em {
+  color: #9C9C9C;
+  font-style: normal;
+  font-weight: normal;
+}
+
+em {
+  color: #777;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  border-bottom: 1px solid #DCDCDC;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+li:last-of-type {
+  border-bottom-width: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* -- Zotabox Contact Form -- */
+.zb-lightbox {
+  display: none !important;
+}
+.ztb-embed-logo {
+  display: none !important;
+}
+#ztb-cf-widget {
+  margin-left: 100px;
+}
+
+/* -- Person -- */
+.Person {
+  display: inline-block;
+  margin: 25px 50px 0;
+  text-align: center;
+  position: relative;
+  width: 225px;
+}
+.Person .Avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto 15px;
+}
+.Person b {
+  display: inline-block;
+  font-size: 18px;
+}
+.Person em {
+  display: inline-block;
+  font-size: 14px;
+}
+.Person .Icon {
+  border-width: 0;
+}
+.Person__Social {
+  visibility: hidden;
+}
+.Person:hover .Person__Social {
+  visibility: visible;
+}
+
+/* -- Icon -- */
+.Icon {
+  background: #FFF;
+  border: 1px solid #DCDCDC;
+  border-radius: 21px;
+  color: #777;
+  display: inline-block;
+  font-size: 28px;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  padding-top: 5px;
+}
+.Icon:hover {
+  background: #F7931D;
+  color: #FFF;
+}
+
+/* -- Legend -- */
+.Legend {
+  color: #F75DAD;
+  font-family: museo-slab, sans-serif;
+  margin: 50px 0 25px;
+  text-align: center;
+  position: relative;
+}
+.Legend > div:nth-of-type(1) {
+  border-bottom: 1px solid #DCDCDC;
+  content: '';
+  position: absolute;
+  height: 1px;
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+.Legend > div:nth-of-type(2) {
+  background-color: #FFF;
+  display: inline-block;
+  padding: 0 25px;
+  position: relative;
+}
+
+@media only screen and (max-width: 850px) {
+  #container {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  #ztb-cf-widget {
+    margin-left: 0;
+  }
+  .Person {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (max-device-width: 850px) {
+  #container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  #ztb-cf-widget {
+    margin-left: 0;
+  }
+  .Person {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
